@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  pdf-viewer:
+    build:
+      context: .
+    ports:
+      - "5090:5090"  # Map host port 8080 to container port 8080
+    container_name: pdf-python-server
